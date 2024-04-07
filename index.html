@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trios</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+  <!--Navbar-->
+    <header>
+        <img class="logo" src="logo.png" alt="Logo" width="100px" height="100px">
+    
+   <nav class="navbar">
+   
+    <ul>
+       
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="whywe.html">Why We</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <button class="btnLogin-popup">Login</button>
+    </ul>
+   </nav>
+ 
+    </header>
+    
+    <section class="section">
+        <div class="wrapper">
+            <span class="icon-close">
+                <box-icon name='x'></box-icon>
+            </span>
+            <div class="logreg-box">
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>Login</h2>
+                        <p>Please Login to use the platform</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon type='solid' name='envelope'></box-icon>
+                            </span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon name='lock-alt' type='solid' ></box-icon>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forget">
+                            <label>
+                                <input type ="checkbox">Remember Me
+                            </label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn1">Login</button>
+
+                        <div class="logreg-link">
+                            <p>Don't have an account?
+                                <a href="#" class="register-link">Register</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+      <!--Register-->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Register</h2>
+                        <p>Please Register to use the platform</p>
+                    </div>
+                    <form action="#">
+
+                        <div class="input-box">
+                            <span class="icon">
+                               
+                            </span>
+                            <input type="text" required>
+                            <label>Prefix</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon name='user' ></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon type='solid' name='envelope'></box-icon>
+                            </span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon name='lock-alt' type='solid' ></box-icon>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon type='solid' name='briefcase'></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Current Designation</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon type='solid' name='buildings'></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Current Company</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon type='solid' name='calendar'></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Total No of Experience</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon name='whatsapp' type='logo' ></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>WhatsApp No</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon name='school' type='solid' ></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Highest Qualification</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <box-icon name='location-plus' type='solid' ></box-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Current Location</label>
+                        </div>
+                        <div class="remember-forget">
+                            <label>
+                                <input type ="checkbox">
+                          Agree to terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn1">Register</button>
+
+                        <div class="logreg-link">
+                            <p>Already have an account?
+                                <a href="#" class="login-link">Login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="media-options">
+                <a href="#">
+                    <box-icon name='google' type='logo' ></box-icon>
+                   <span>Login with Google</span>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!----Register Ends here-->
+
+
+    
+    <!--Main Section-->
+    <section class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="Dummy website video 4.4.24.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+       
+    </section>
+    
+
+    <!--About-->
+
+    <section  id="about">
+        <div class="about-1">
+            <h2>About Us</h2>
+            <p>
+                TRIOs, an ISO 9001:2015 certified organization since 2010, offers expert research and consultancy services globally. Committed to conviction, equality, and integrity, we specialize in addressing socio-economic challenges and fostering sustainable development, with a recent focus on COVID-19 response efforts.
+            </p>
+        </div>
+        <div id="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-item-wrapper">
+                                <i class="fa fa-book"></i>
+                                <h3>Mission</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod qui, doloremque alias quidem eos voluptate! Repudiandae dolorem veritatis nulla dolor. Laudantium laboriosam excepturi quod,
+                                     vero amet tempora tempore placeat!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item-wrapper">
+                                <div class="about-item">
+                                <i class="fa fa-globe"></i>
+                                <h3>Vission</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod qui, doloremque alias quidem eos voluptate! Repudiandae dolorem veritatis nulla dolor. Laudantium laboriosam excepturi quod,
+                                     vero amet tempora tempore placeat!</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item-wrapper">
+                                <div class="about-item">
+                                <i class="fa fa-pen"></i>
+                                <h3>Achievements</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod qui, doloremque alias quidem eos voluptate! Repudiandae dolorem veritatis nulla dolor. Laudantium laboriosam excepturi quod,
+                                     vero amet tempora tempore placeat!</p>
+                               </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Services-->
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <img src="images (1).jpeg"Service 1">
+                        <div class="icons">
+                            <i class="first"></i>
+                        </div>
+                        <h3>Service 1</h3>
+                        <p>Description of Service 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <img src="market research.png" alt="Service 2">
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3>Service 2</h3>
+                        <p>Description of Service 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <section class="testimonial">
+
+    <div class="swiper-mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Delectus, unde consequatur quod earum quasi itaque, cupiditate animi 
+                     quas enim libero perspiciatis dolore, consequuntur impedit. 
+                     Architecto numquam perspiciatis eaque cumque nemo?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+
+
+
+
+    <!--Testimonila-->
+
+    <!----
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Our Clients</h2>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="avatar1.jpg" alt="Author 1">
+                            <div class="author-details">
+                                <h4>John Doe</h4>
+                                <span>CEO, Company Name</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi nec odio odio. Pellentesque commodo euismod."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="avatar2.jpg" alt="Author 2">
+                            <div class="author-details">
+                                <h4>Jane Smith</h4>
+                                <span>CTO, Company Name</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+-->
+
+    <!---->
+
+    
+    
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Provide contact information or a contact form for users to reach out.</p>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Trios. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
