@@ -54,3 +54,31 @@
     wrapper.classList.remove('active-popup');
     wrapper.classList.remove('active');
   };
+
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor:true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener('scroll', function() {
+      var aboutSection = document.getElementById('about');
+      var sectionPosition = aboutSection.getBoundingClientRect().top;
+      var screenHeight = window.innerHeight;
+  
+      if (sectionPosition < screenHeight / 1.5) {
+        aboutSection.classList.add('animate-up');
+      }
+    });
+  });
+  

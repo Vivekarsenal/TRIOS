@@ -22,8 +22,8 @@
 }
 
 body {
-    font-family: "Open Sans', sans-serif;
-font-size: 16px;
+    font-family: "Open Sans', sans-serif";
+     font-size: 16px;
     background-color: var(--background);
     margin: 0;
     padding: 0;
@@ -127,7 +127,7 @@ header {
     font-size: 14px;
     gap: 4px;
     font-weight: 600;
-    font-family: "Open Sans', sans-serif;
+    font-family: "Open Sans', sans-serif";
     flex-wrap: nowrap;
     padding: 4px 10px;
     white-space: nowrap;

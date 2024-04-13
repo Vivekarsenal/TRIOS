@@ -1,0 +1,192 @@
+*{
+    box-sizing:border-box ;
+    margin:0;
+    padding: 0;
+    font-family:  "Poppins", sans-serif;
+  
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+li,a,button{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+.logo{
+    cursor:pointer;
+    margin-right: auto;
+   
+    height: 70px;
+
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px ;
+}
+.navbar li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+
+}
+.navbar li a :hover{
+    color:black
+    
+}
+button{
+    margin-left: 20px;
+    padding: 9px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor:pointer ;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: grey;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size:100px ;
+    color:white;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+
+}
+.card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Adjust spacing as needed */
+    font-size: 44px; /* Adjust font size as needed */
+    color: orange;
+    font-family:  "Poppins", sans-serif;
+}
+.demo{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+
+}
+.card1{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover ;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+.card1>.row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.card1>.row>.icon1{
+    background:#223 ;
+    color:white;
+    border-radius: 70%;
+    width:50px;
+    
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+
+}
+.card1 h4{
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+}
+
+.card1 > .row >.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay:.3s;
+    transition: all .3s ease ;
+
+}
+.description p{
+    color:#b0b0ba;
+    padding-top:5px;
+}
+.description h4{
+    text-transform: uppercase;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    width: 600px ;
+}
+input:checked+label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+}
+.card1[for="c1"]{
+    background-image:url('./images/card1.jpg');
+}
+.card1[for="c2"]{
+    background-image:url('./images/card2.jpg');
+}
+.card1[for="c3"]{
+    background-image:url('./images/card3.jpg');
+}
+.card1[for="c4"]{
+    background-image:url('./images/card4.jpg');
+}
+.card1[for="c5"]{
+    background-image:url('./images/card5.jpg');
+}
+
+.our-partners{
+    font-family:"Poppins", sans-serif;
+    
+}

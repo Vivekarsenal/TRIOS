@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>`
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,17 @@
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 >
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="swiper-bundle.min.css">
 
 </head>
 <body>
@@ -75,7 +85,7 @@
                     </form>
                 </div>
       <!--Register-->
-                <div class="form-box register">
+                <div class="form-box-register">
                     <div class="logreg-title">
                         <h2>Register</h2>
                         <p>Please Register to use the platform</p>
@@ -170,7 +180,7 @@
             </div>
             <div class="media-options">
                 <a href="#">
-                    <box-icon name='google' type='logo' ></box-icon>
+                 <i class="bx bxl-google"></i>
                    <span>Login with Google</span>
             </a>
             </div>
@@ -184,7 +194,7 @@
     <!--Main Section-->
     <section class="hero">
         <video autoplay muted loop id="background-video">
-            <source src="Dummy website video 4.4.24.mp4" type="video/mp4">
+            <source src="demo4.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
        
@@ -195,29 +205,31 @@
 
     <section  id="about">
         <div class="about-1">
-            <h2>About Us</h2>
+            <h2 style="color:orange">About Us</h2>
             <p>
                 TRIOs, an ISO 9001:2015 certified organization since 2010, offers expert research and consultancy services globally. Committed to conviction, equality, and integrity, we specialize in addressing socio-economic challenges and fostering sustainable development, with a recent focus on COVID-19 response efforts.
             </p>
         </div>
         <div id="about-2">
             <div class="content-box-lg">
-                <div class="container">
+                <div class="container1">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="about-item-wrapper">
+                                <div class="about-item">
                                 <i class="fa fa-book"></i>
                                 <h3>Mission</h3>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod qui, doloremque alias quidem eos voluptate! Repudiandae dolorem veritatis nulla dolor. Laudantium laboriosam excepturi quod,
                                      vero amet tempora tempore placeat!</p>
+                                     </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="about-item-wrapper">
                                 <div class="about-item">
                                 <i class="fa fa-globe"></i>
-                                <h3>Vission</h3>
+                                <h3>Vision</h3>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod qui, doloremque alias quidem eos voluptate! Repudiandae dolorem veritatis nulla dolor. Laudantium laboriosam excepturi quod,
                                      vero amet tempora tempore placeat!</p>
@@ -246,7 +258,7 @@
 
     <section class="services" id="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2 style="color: orange;">Our Services</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="service-item">
@@ -275,22 +287,48 @@
     </section>
 
 
-   <section class="testimonial">
-
-    <div class="swiper-mySwiper2">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonialBox">
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Delectus, unde consequatur quod earum quasi itaque, cupiditate animi 
-                     quas enim libero perspiciatis dolore, consequuntur impedit. 
-                     Architecto numquam perspiciatis eaque cumque nemo?</p>
-              </div>
+   <section class="testimonial ">
+     <div class="testimonial1 mySwiper">
+        <h2>What Our Clients Say</h2>
+        <div class="testi-content swiper-wrapper">
+            <div class="slideto swiper-slide">
+              <img src="images/slide1.jpg" alt="" class="image"/>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
+                 voluptatum minima! Consequatur, magnam?</p>
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+                <div class="details">
+                    <span class="name">Sam</span>
+                    <span class="job">Manager</span>
+                </div>
             </div>
-          </div>
+            <div class="slideto swiper-slide">
+                <img src="images/person2.jpg" alt="" class="image"/>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
+                   voluptatum minima! Consequatur, magnam?</p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                      <span class="name">Sam</span>
+                      <span class="job">Manager</span>
+                  </div>
+              </div>
+              <div class="slideto swiper-slide">
+                <img src="images/person3.jpg" alt="" class="image"/>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
+                   voluptatum minima! Consequatur, magnam?</p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                      <span class="name">Sam</span>
+                      <span class="job">Manager</span>
+                  </div>
+              </div>
         </div>
-      </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+         <div class="swiper-pagination"></div>
+     </div>
    </section>
 
 
@@ -344,16 +382,82 @@
 -->
 
     <!---->
+    <section class="our-partners">
 
+        <h3 style="color: orange ;">Our Partners</h3>
+        <div class="move">
+            <div class="move-track">
+                <!--9 slide-->
+                <div class="move">
+                    <img src="./images/slide1.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide2.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide3.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide4.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide5.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide6.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide7.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide8.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide9.jpg"/>
+                </div>
+
+                <!--Double it-->
+                <div class="move">
+                    <img src="./images/slide1.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide2.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide3.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide4.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide5.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide6.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide7.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide8.jpg"/>
+                </div>
+                <div class="move">
+                    <img src="./images/slide9.jpg"/>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+ 
     
     
     <!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Provide contact information or a contact form for users to reach out.</p>
-    </div>
-</section>
+
 
 
 <!-- Footer Section -->
@@ -362,7 +466,11 @@
         <p>&copy; 2024 Trios. All rights reserved.</p>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
+
 <script src="script.js"></script>
+
+ 
+
 </body>
 </html>
