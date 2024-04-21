@@ -4,12 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500;600;700&display=swap');
 
-*{
-    box-sizing:border-box ;
-    margin:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    font-family:  "Poppins", sans-serif;
-  
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -17,6 +16,141 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+
+header {
+    background-color: white;
+    padding: 10px 20px;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 115px; /* Increased by 50% */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    
+    top: 100%;
+    left: 0;
+    background-color: orange;
+    border-radius: 4px;
+    margin-top: 10px;
+    z-index: 10; /* Ensure dropdown appears above other content */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+/*
+.navbar {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    padding: 10px 30px;
+}
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: orange;
+    width: 200px; 
+    z-index: 1000;
+}
+
+.dropdown_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    padding: 10px;
+    display: block; 
+    width: 100%; 
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+
+*/
+
+/*
 li,a,button{
     font-family:"Poppins ,sans-serif"; 
     font-weight: 500;
@@ -38,7 +172,7 @@ header{
     cursor:pointer;
     margin-right: auto;
    
-    height: 70px;
+    height: 90px;
 
 }
 .navbar{
@@ -53,17 +187,22 @@ header{
 .navbar ul li {
     display: inline;
     margin-right: 20px;
+    position: relative;
 }
 
+
 .navbar ul li a {
-    text-decoration: none; /* Remove default underline */
-    color: black; /* Set default text color */
+    text-decoration: none; 
+    color: black;
+    transition: all 0.3s ease 0s; 
+    font-size: 16px;
 }
 
 .navbar ul li a:hover {
-   /* Underline on hover */
-    color: orange; /* Change text color on hover */
+   /* Underline on hover 
+    color: orange;
 }
+
 .navbar li{
     display: inline-block;
     padding: 0px 20px ;
@@ -79,6 +218,43 @@ header{
     color:black
     
 }
+.dropdown_menu{
+   display: none;
+  
+}
+.navbar ul li:hover.dropdown_menu{
+    display: block;
+   
+   position: absolute;
+   left: 0;
+   top:100%;
+   background-color:  orange;
+
+
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+    
+}
+
+.navbar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+  padding: 10px;
+}
+
+.fa-solid.fa-caret-down{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+
+}
+*/
+
 button{
     margin-left: 20px;
     padding: 9px;
@@ -116,18 +292,111 @@ button:hover{
 
 #background-video {
     position: absolute;
+    
     top: 40%;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
-    min-height: 100%;
+    min-height: 50%;
     width: auto;
     height: auto;
     z-index: -1;
 }
+/*counting animation*/
+/* Initial styles */
+.counting {
+    width: 100%;
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px 0; /* Add padding to the top and bottom */
+    opacity: 0; /* Initial opacity set to 0 */
+    transform: translateY(50px); /* Initial translation */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition effect */
+}
 
+/* Animation for when the section is scrolled into view */
+.counting.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.animation {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: orange;
+    border-bottom: 10px solid hsl(30, 89%, 65%);
+}
+
+i {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+span.num {
+    color: #e3f2fd;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+span.text {
+    color: #e3f2fd;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .counting {
+        width: 85vw;
+    }
+
+    .animation {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .counting {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .animation {
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .animation {
+        gap: 15px;
+    }
+
+    .counting {
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+}
 
 
 
@@ -448,6 +717,7 @@ button:hover{
 .about-item:hover{
     background-color: rgb(245, 164, 34);
 }
+
 .about-item:hover i,
 .about-item:hover h2,
 .about-item:hover p{
@@ -743,10 +1013,12 @@ footer {
 /* testimonial*/
 
 .testimonial1{
+    position: relative;
    max-width: relative;
    max-width: 900px;
    width: 100%;
    padding: 50px 0;
+   height: 500px;
    
    overflow: hidden;
  
@@ -766,7 +1038,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#e3f2fd ;
+    background-color:#fff ;
  }
  .testimonial1 .slideto{
     display: flex;
@@ -804,6 +1076,7 @@ footer {
     font-weight: 400;
     color: #333;
  }
+ 
  .nav-btn{
     height: 40px;
     width: 40px;
@@ -812,7 +1085,7 @@ footer {
     background-color: rgba(0,0,0,0.1);
     transition: 0.2s;
 
- }
+ } 
  .nav-btn:hover{
     background-color: rgba(0, 0, 0, .2);
  }
@@ -827,13 +1100,34 @@ footer {
     font-size: 24px; /* Adjust font size as needed */
     color: orange; /* Heading color */
 }
- /*
+ 
  .swiper-pagination-bullet{
     background-color: rgba(0,0,0,0.8);
  }
  .swiper-pagination-bullet-active{
     background-color: #4070f4;
- }*/
+ }
+
+ .swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    position: absolute;
+    z-index: 10; /* Ensure they appear above the slides */
+}
+
+.swiper-button-next {
+    right: 10px; /* Adjust as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+    left: 10px; /* Adjust as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+
+
  
 @media screen and (max-width:768px){
     .slideto p{
@@ -885,8 +1179,8 @@ h1{
 .our-partners{
     height: 400px;
 }
-.our-partners h3{
-    font-size: 42px;
+.our-partners h3{ 
+    font-size: 200px;
 }
 .move{
     height: 500px;
@@ -911,6 +1205,7 @@ h1{
 }
 .move img{
     width: 100%;
+    height: 70%;
 
 }
 

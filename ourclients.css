@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap')
+;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    box-sizing:border-box ;
+    margin:0;
+    padding: 0;
+    font-family:  "Poppins", sans-serif;
+  
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+li,a,button{
+    font-family:"Poppins ,sans-serif"; 
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+.logo{
+    cursor:pointer;
+    margin-right: auto;
+   
+    height: 70px;
+
+}
+.navbar{
+    list-style: none;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove default underline */
+    color: black; /* Set default text color */
+}
+
+.navbar ul li a:hover {
+   /* Underline on hover */
+    color: orange; /* Change text color on hover */
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px ;
+}
+.navbar li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+
+}
+.navbar li a :hover{
+    color:black
+    
+}
+button{
+    margin-left: 20px;
+    padding: 9px;
+    background-color: orange;
+    border:none;
+    border-radius: 50px;
+    cursor:pointer ;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: grey;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size:100px ;
+    color:white;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+
+}
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 250%;
+    z-index: 100;
+    background-color: rgba(232, 150, 42, 0.9); /* Change background color */
+    backdrop-filter: blur(15px);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    opacity: 0;
+    pointer-events: none;
+
+
+}
+.wrapper.active-popup{
+    opacity:1;
+    pointer-events:auto ;
+
+
+}
+.media-options{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.media-options a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center ;
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:2px solid #fff;
+    margin:10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2) ;
+    border-radius: 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.media-options a i{
+    font-size: 22px;
+    margin: 0 8px 1.5px 0;
+}
+.media-options a:hover{
+    background: rgba(255,255,255, .1);
+}
+.media-options a box-icon{
+    font-size: 22px;
+    margin: 0 8px 1.5px 0;
+
+}
+.icon-close{
+    position:absolute;
+    top:0;
+    right:0;
+    width:45px;
+    height:45px;
+    background: white;
+    color:pointer ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius:10px;
+}
+.icon-close i{
+    font-size: 32px;
+    color: #333;
+}
+.media-options a span{
+    font-size:16px ;
+    font-weight: 500;
+}
+
+.wrapper .logreg-box
+{
+    width:100%;
+   
+
+}
+.wrapper .form-box.login{
+    display:block;
+
+}
+.wrapper.active .form-box.login{
+    display:none;
+
+}
+.wrapper .form-box .register{
+    display: none;
+
+}
+.wrapper.active .form-box .register{
+    display: block;
+
+}
+.logreg-box .logreg-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.logreg-title h2{
+    font-size: 32px;
+}
+.logreg-title p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logreg-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+    border-radius: 2px solid #fff;
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background:rgb(255, 214, 133);
+    border:none;
+    outline: none;
+    font-size: 16px;
+    color:#fff;
+    font-weight: 500;
+    padding-right:25px ;
+
+
+}
+.input-box label{
+    position: absolute;
+    top:50%;
+    left:0;
+
+    font-size: 16px;
+    color:#fff
+;
+   font-weight: 500;
+   pointer-events: none;
+   transition: .5s;
+   transform: translateY(-50%);
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+   top:-5px;
+}
+.input-box .icon{
+    position: absolute;
+    font-size: 19px;
+    right:0;
+    top:50%;
+    color: #fff;
+    transform: translateY(-50%);
+
+
+}
+
+.logreg-box .remember-forget{
+    font-size: 14.5px;
+    color:#fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration:none ;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.logreg-box .btn1{
+    width:100%;
+    height:45px;
+    background: #fff;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-size:16px;
+    color: #222 ;
+    font-weight:600;
+}
+.logreg-box .logreg-link{
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+  
+    margin:25px 0 15px;
+
+}
+.logreg-link p a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logreg-link p a:hover{
+    text-decoration:underline ;
+}
+
+/* Institutional Partners*/
+
+
+.counter {
+    text-align: center;
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    color: #f76110; /* Text color */
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Add some spacing between headings */
+}
+
+.sub-heading h2 {
+    font-size: 2em;
+    color: black; /* Adjust color as needed */
+    margin-top: 10px; /* Add some spacing between headings */
+    text-decoration: underline;
+}
+.wrapper1 {
+    max-width: 1200px;
+    position:relative;
+}
+.wrapper1 i{
+    top:50%;
+    background :#fff;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    
+}
+.wrapper1 i:first-child{
+    left: -23px;
+
+}
+.wrapper1 i:last-child{
+   right: -23px;
+    
+}
+.wrapper1 .carousel{
+    white-space: nowrap;
+
+
+}
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%/3);
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width:550px){
+ .carousel img{
+    width: calc(100%/2);
+ }    
+}

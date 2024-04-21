@@ -11,7 +11,7 @@
 >
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
-
+<link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,27 +21,51 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="swiper-bundle.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body>
   <!--Navbar-->
-    <header>
-        <img class="logo" src="logo.png" alt="Logo" width="100px" height="100px">
-    
-   <nav class="navbar">
-   
-    <ul>
-       
-        <li><a href="index.html">About Us</a></li>
-        <li><a href="whywe.html">Why We</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="joinus.html">Join Us</a></li>
-        <button class="btnLogin-popup">Login</button>
-    </ul>
-   </nav>
- 
-    </header>
+  <header>
+    <nav class="navbar">
+        <img class="logo" src="logo.png"  href="index.html"alt="Company Logo">
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="dropdown-menu">
+                    <a href="#">Our Story</a>
+                    <a href="#">Why We</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Our Partners</a>
+                    <a href="#">Testimonials</a>
+
+                </div>
+            </li>
+            <li class="dropdown"><a href="whywe.html" class="nav-link">About Us</a>
+                <div class="dropdown-menu">
+                    <a href="#">Our Team</a>
+                    <a href="#">Our Core Values</a>
+               
+
+                </div>
+            
+            </li>
+            <li class="dropdown"><a href="services.html" class="nav-link">Services</a>
+                <div class="dropdown-menu">
+                    <a href="#">Social Research and Consultancy Services</a>
+                    <a href="#">MARKET RESEARCH & ADVISORY SERVICES</a>
+               
+
+                </div>
+            </li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="ourclients.html" class="nav-link">Our Clients</a></li>
+            <li><a href="joinus.html" class="nav-link">Join Us</a></li>
+            <button class="btnLogin-popup">Login</button>
+        </ul>
+    </nav>
+</header>
+
+
     
     <section class="section">
         <div class="wrapper">
@@ -194,12 +218,32 @@
     <!--Main Section-->
     <section class="hero">
         <video autoplay muted loop id="background-video">
-            <source src="demo4.mp4" type="video/mp4">
+            <source src="size-wise front video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
        
     </section>
     
+    <section  class="counting">
+        <div class="animation">
+            <i class="fa-solid fa-briefcase"></i>
+            <span class="num" data-val="160">000</span>
+            <span class="text" >Delivered Projects</span>
+        </div>
+        <div class="animation">
+            <i class="fa-solid fa-map-location"></i>
+            <span class="num" data-val="32">000</span>
+            <span class="text" >States & UT of India</span>
+        </div>
+        <div class="animation">
+            <i class="fa-solid fa-handshake"></i>
+
+
+            <span class="num" data-val="75">000</span>
+            <span class="text" >Organizations</span>
+        </div>
+
+    </section>
 
     <!--About-->
 
@@ -286,102 +330,7 @@
         </div>
     </section>
 
-
-   <section class="testimonial ">
-     <div class="testimonial1 mySwiper">
-        <h2>What Our Clients Say</h2>
-        <div class="testi-content swiper-wrapper">
-            <div class="slideto swiper-slide">
-              <img src="images/slide1.jpg" alt="" class="image"/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
-                 voluptatum minima! Consequatur, magnam?</p>
-                <i class="bx bxs-quote-alt-left quote-icon"></i>
-                <div class="details">
-                    <span class="name">Sam</span>
-                    <span class="job">Manager</span>
-                </div>
-            </div>
-            <div class="slideto swiper-slide">
-                <img src="images/person2.jpg" alt="" class="image"/>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                  Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
-                   voluptatum minima! Consequatur, magnam?</p>
-                  <i class="bx bxs-quote-alt-left quote-icon"></i>
-                  <div class="details">
-                      <span class="name">Sam</span>
-                      <span class="job">Manager</span>
-                  </div>
-              </div>
-              <div class="slideto swiper-slide">
-                <img src="images/person3.jpg" alt="" class="image"/>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                  Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
-                   voluptatum minima! Consequatur, magnam?</p>
-                  <i class="bx bxs-quote-alt-left quote-icon"></i>
-                  <div class="details">
-                      <span class="name">Sam</span>
-                      <span class="job">Manager</span>
-                  </div>
-              </div>
-        </div>
-        <div class="swiper-button-next nav-btn"></div>
-        <div class="swiper-button-prev nav-btn"></div>
-         <div class="swiper-pagination"></div>
-     </div>
-   </section>
-
-
-
-
-
-    <!--Testimonila-->
-
-    <!----
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center">Our Clients</h2>
-                </div>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="avatar1.jpg" alt="Author 1">
-                            <div class="author-details">
-                                <h4>John Doe</h4>
-                                <span>CEO, Company Name</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi nec odio odio. Pellentesque commodo euismod."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="avatar2.jpg" alt="Author 2">
-                            <div class="author-details">
-                                <h4>Jane Smith</h4>
-                                <span>CTO, Company Name</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
--->
-
-    <!---->
+<!--Our Partners-->
     <section class="our-partners">
 
         <h3 style="color: orange ;">Our Partners</h3>
@@ -453,7 +402,104 @@
     </section>
 
 
- 
+ <!--Testimonial-->
+
+   <section class="testimonial ">
+     <div class="testimonial1 mySwiper">
+        <h2>What Our Clients Say</h2>
+        <div class="testi-content swiper-wrapper">
+            <div class="slideto swiper-slide">
+              <img src="images/slide1.jpg" alt="" class="image"/>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
+                 voluptatum minima! Consequatur, magnam?</p>
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+                <div class="details">
+                    <span class="name">Sam</span>
+                    <span class="job">Manager</span>
+                </div>
+            </div>
+            <div class="slideto swiper-slide">
+                <img src="images/slide2.jpg" alt="" class="image"/>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
+                   voluptatum minima! Consequatur, magnam?</p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                      <span class="name">Sam</span>
+                      <span class="job">Manager</span>
+                  </div>
+              </div>
+              <div class="slideto swiper-slide">
+                <img src="images/slide3.jpg" alt="" class="image"/>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Sint alias sequi explicabo laboriosam hic beatae earum, optio placeat at quos delectus debitis quas deserunt maxime ipsum,
+                   voluptatum minima! Consequatur, magnam?</p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                      <span class="name">Sam</span>
+                      <span class="job">Manager</span>
+                  </div>
+              </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+         <div class="swiper-pagination"></div>
+     </div>
+   </section>
+   <script src="swiper-bundle.min.js"></script>
+
+
+
+
+    <!--Testimonila-->
+
+    <!----
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Our Clients</h2>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="avatar1.jpg" alt="Author 1">
+                            <div class="author-details">
+                                <h4>John Doe</h4>
+                                <span>CEO, Company Name</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi nec odio odio. Pellentesque commodo euismod."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="avatar2.jpg" alt="Author 2">
+                            <div class="author-details">
+                                <h4>Jane Smith</h4>
+                                <span>CTO, Company Name</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+-->
+
+    <!---->
+    
     
     
     <!-- Contact Section -->
@@ -466,7 +512,7 @@
         <p>&copy; 2024 Trios. All rights reserved.</p>
     </div>
 </footer>
-<script src="swiper-bundle.min.js"></script>
+
 
 <script src="script.js"></script>
 

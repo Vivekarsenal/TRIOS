@@ -54,6 +54,10 @@
                 </ul>
                 <ul class="sci">
                     <li><a href="#"></a><img src="images/facebook.png"></li>
+                    <li><a href="#"></a><img src="images/insta logo.png"></li>
+                    <li><a href="#"></a><img src="images/linkedin 2.png"></li>
+                    <li><a href="#"></a><img src="images/yt2.png"></li>
+                    
                 </ul>
             </div>
         </div>
@@ -72,13 +76,15 @@
                     <input type="email" name="" required>
                     <span>Email</span>
                 </div>
-                <div class="input-box w20">
+                <div class="input-box w20" id="upload">
                     <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
                     <span>Upload Resume</span>
                 </div>
-                <div class="input-box w50">
-                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="" required>
+                <div class="input-box w50 h50">
                     <span>Mobile No</span>
+                    <br>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="" required>
+                    
                 </div>
                 <div class="input-box w100">
                     <textarea name="" required></textarea>
@@ -91,6 +97,26 @@
 
         </div>
     </div>
+</section>
+
+<section class="openings">
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first" checked>
+            <label for="first">Current Openings </label>
+            <div class="content">
+                <p></p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Internships </label>
+            <div class="content">
+                <p></p>
+            </div>
+        </li>
+    </ul>
+   
 </section>
 </body>
 </html>

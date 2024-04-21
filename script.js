@@ -82,3 +82,35 @@
     });
   });
   
+  let valueDisplays=document.querySelectorAll(".num");
+  let interval=4000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValues=0;
+    let endValues=parseInt(valueDisplay.getAttribute("data-val"));
+   
+    let duration = Math.floor(interval / endValues);
+    let counter= setInterval(function() {
+      startValues+=1;
+      valueDisplay.textContent=startValues;
+      if(startValues== endValues){
+        clearInterval(counter);
+      }
+    },duration);
+  });
+ 
+
+  // JavaScript code
+document.addEventListener("DOMContentLoaded", function () {
+  const countingSection = document.querySelector(".counting");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              countingSection.classList.add("animate");
+          }
+      });
+  });
+
+  observer.observe(countingSection);
+});
